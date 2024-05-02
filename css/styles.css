@@ -1,0 +1,256 @@
+.main-page {
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+  list-style-type: none;
+}
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+  border: 2px solid;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.gallery {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+}
+
+.gallery li {
+  cursor: pointer;
+}
+
+.gallery img {
+  display: flex;
+  width: 360px;
+  height: 300px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  padding: 24px;
+  row-gap: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  padding-left: 0;
+}
+
+.item h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.04px;
+  padding-left: 16px;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  list-style-type: none;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.item ul li {
+  width: 100%;
+  line-height: 40px;
+  padding-left: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+}
+
+.name-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  padding: 24px;
+  row-gap: 8px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+}
+
+.login-form label input {
+  width: 360px;
+  height: 40px;
+  line-height: 24px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.login-form button {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 16px;
+  outline: none;
+  border: none;
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+  color: #ffffff;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  row-gap: 16px;
+  margin: 0 auto;
+}
+/* 5 */
+.widget p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+}
+
+.change-color {
+  font-family: "Montserrat", sans-serif;
+  width: 148px;
+  height: 40px;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  background-color: #4e75ff;
+}
+
+/* 6 */
+
+#controls {
+  display: flex;
+  width: 486px;
+  height: 104px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  column-gap: 16px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+  text-align: center;
+}
+
+/* Приховати стрілки для поля вводу типу "number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+#controls button {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+  border: none;
+  color: #ffffff;
+}
+
+#controls button[data-create] {
+  background-color: #4e75ff;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  margin-top: 16px;
+  border-radius: 8px;
+}
